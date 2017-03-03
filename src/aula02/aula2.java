@@ -39,7 +39,8 @@ public class aula2
             System.out.print("Informe um número inteiro:");
             int numInteiro = Reader.readInt();
             int numDoubleInt = (int) numDouble;
-            System.out.print("Resultado:" +((Math.pow(numInteiro, 2)+numDouble-30) ) );
+            System.out.print("O resultado de "+numInteiro+"^2 +"+numDouble+"-30 é " +((Math.pow(numInteiro, 2)+numDouble-30) ) );
+            System.out.println("");
             System.out.println("");
 
         }

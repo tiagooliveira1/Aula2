@@ -13,37 +13,35 @@ public class aula2
     {
         // TODO Auto-generated method stub
         while (true) {
-            System.out.print("Digite um número:");
-            //Scanner sc = new Scanner(System.in);
-            //int numero = sc.nextInt();
+            /* Parte 1 do exercício */
+            System.out.print("Digite um número inteiro:");
             int numero = Reader.readInt();
 
-            System.out.print(numero+" é ");
-            if (numero > 0)  {
-                System.out.println("maior que 0");
-            } else if (numero < 0) {
-                System.out.println("menor que 0");
+            if ( (numero % 2) == 0)  {
+                System.out.println(numero+" é par");
             } else {
-                System.out.println("é zero!");
+                System.out.println(numero+" é ímpar");
             }
 
-            System.out.println("");
-            System.out.println("=== Comparando 2 números ===");
+            /* Parte 2 do exercício */
+            System.out.println("=== Retângulo ===");
+
+            System.out.print("Informe a altura:");
+            int retAltura = Reader.readInt();
+            System.out.print("Informe a largura:");
+            int retLargura = Reader.readInt();
+            System.out.println("A área do retângulo é "+(retAltura*retLargura) );
             System.out.println("");
 
-            System.out.print("Digite o primeiro número:");
-            //int primeiroNumero = sc.nextInt();
-            int primeiroNumero = Reader.readInt();
-            System.out.print("Digite o segundo número:");
-            //int segundoNumero = sc.nextInt();
-            int segundoNumero = Reader.readInt();
-            if(primeiroNumero > segundoNumero) {
-                System.out.println("O número "+primeiroNumero+" é maior que "+segundoNumero);
-            } else if(primeiroNumero < segundoNumero) {
-                System.out.println("O número "+primeiroNumero+" é menor que "+segundoNumero);
-            } else {
-                System.out.println("O número "+primeiroNumero+" é igual ao número "+segundoNumero);
-            }
+            /* Parte 3 do exercício */
+            System.out.print("Informe um número double:");
+            double numDouble = Reader.readDouble();
+            System.out.print("Informe um número inteiro:");
+            int numInteiro = Reader.readInt();
+            int numDoubleInt = (int) numDouble;
+            System.out.print("Resultado:" +((Math.pow(numInteiro, 2)+numDouble-30) ) );
+            System.out.println("");
+
         }
 
 

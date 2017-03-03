@@ -1,5 +1,9 @@
 package aula02;
-import java.util.Scanner;
+//import java.util.Scanner;
+
+//import java.util.Scanner;
+import com.opet.util.Reader;
+
 
 
 public class aula2
@@ -10,8 +14,9 @@ public class aula2
         // TODO Auto-generated method stub
         while (true) {
             System.out.print("Digite um número:");
-            Scanner sc = new Scanner(System.in);
-            int numero = sc.nextInt();
+            //Scanner sc = new Scanner(System.in);
+            //int numero = sc.nextInt();
+            int numero = Reader.readInt();
 
             System.out.print(numero+" é ");
             if (numero > 0)  {
@@ -27,9 +32,11 @@ public class aula2
             System.out.println("");
 
             System.out.print("Digite o primeiro número:");
-            int primeiroNumero = sc.nextInt();
+            //int primeiroNumero = sc.nextInt();
+            int primeiroNumero = Reader.readInt();
             System.out.print("Digite o segundo número:");
-            int segundoNumero = sc.nextInt();
+            //int segundoNumero = sc.nextInt();
+            int segundoNumero = Reader.readInt();
             if(primeiroNumero > segundoNumero) {
                 System.out.println("O número "+primeiroNumero+" é maior que "+segundoNumero);
             } else if(primeiroNumero < segundoNumero) {
